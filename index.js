@@ -26,6 +26,9 @@ generateButton.onclick = function() {
     if (passLength <= 0) {
         result.textContent = "Please enter a length longer than 0.";
     }
+    else if (passLength >= 30) {
+        result.textContent = "Please enter a length shorter than 30.";
+    }
     else if (allowedChars.length === 0) {
         result.textContent = "Please select at least ONE set of characters.";
     }
